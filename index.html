@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanguageMaster - Corso di Inglese Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #cc0000;
+        }
+
+        .features {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .price-section {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .price-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .testimonials {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-item {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-form {
+            padding: 50px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .accent-color {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Diventa fluente in inglese</h1>
+        <p>Impara l'inglese con docenti madrelingua qualificati</p>
+        <a href="#contatto" class="cta-button">Inizia la prova gratuita</a>
+    </section>
+
+    <section class="features">
+        <h2>Perché scegliere il nostro corso?</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>Docenti Madrelingua</h3>
+                <p>Insegnanti qualificati sempre disponibili in chat</p>
+            </div>
+            <div class="feature-item">
+                <h3>Lezioni Online</h3>
+                <p>Studia quando vuoi, dove vuoi</p>
+            </div>
+            <div class="feature-item">
+                <h3>Guide Scaricabili</h3>
+                <p>Materiale didattico sempre a portata di mano</p>
+            </div>
+            <div class="feature-item">
+                <h3>Garanzia Soddisfatti</h3>
+                <p>30 giorni soddisfatti o rimborsati</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-section">
+        <div class="price-box">
+            <h2>Abbonamento Mensile</h2>
+            <h3 class="accent-color" style="font-size: 2.5em;">€14.90</h3>
+            <p>al mese</p>
+            <ul style="list-style: none; margin: 20px 0;">
+                <li>✓ Accesso illimitato alle lezioni</li>
+                <li>✓ Guide scaricabili</li>
+                <li>✓ Supporto chat 24/7</li>
+                <li>✓ Certificato di completamento</li>
+            </ul>
+            <a href="#contatto" class="cta-button">Prova Gratis per 30 Giorni</a>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Cosa dicono i nostri studenti</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-item">
+                <p>"Ho raggiunto il livello B2 in soli 6 mesi. Fantastico!"</p>
+                <p><strong>- Marco R.</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"I docenti sono sempre disponibili e molto preparati."</p>
+                <p><strong>- Laura B.</strong></p>
+            </div>
+            <div class="testimonial-item">
+                <p>"Finalmente ho superato l'esame IELTS. Grazie!"</p>
+                <p><strong>- Giovanni M.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form" id="contatto">
+        <h2>Vuoi saperne di più?</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Cognome" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <button type="submit" class="cta-button">Per saperne di più</button>
+        </form>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 20px;">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Termini e Condizioni</a>
+        </div>
+        <div>
+            <p>Contatti: info@languagemaster.it</p>
+            <p>Tel: +39 02 1234567</p>
+            <p>P.IVA: IT12345678901</p>
+        </div>
+    </footer>
+</body>
+</html>
